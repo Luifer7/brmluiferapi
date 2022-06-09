@@ -1,5 +1,5 @@
 # brmluiferapi
-Sistema de productos, vistas, crud y rest api, hecha con node js.
+Sistema de productos, vistas, crud y rest api, hecha con node js. express js, mysql (Alwaysdata)
 
 Este sistema consta de dos partes, un login y registro con las vistas de un CRUD para crear, editar, 
 y eliminar estos productos y una REST API para gestionar los productos.
