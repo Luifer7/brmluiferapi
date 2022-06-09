@@ -1,0 +1,46 @@
+
+
+  <% if (product) { %>
+    <div class="col col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <!-- FORMULARIO -->
+            <form action="/update" method="POST">
+                <input name="id" value="<%= product.id %>" type="hidden">
+                        <!-- Nombre -->
+                        <div class="mb-3">
+                        <label for="" class="form-label">Lote</label>
+                        <input type="text"  value="<%= product.number%>"  class="form-control" name="number">
+                        </div>
+
+                        <!-- precio uno -->
+                        <div class="mb-3">
+                        <label  class="form-label">Name</label>
+                        <input type="text" value="<%= product.name%>"  class="form-control" name="name">
+                        </div>
+
+                        <!-- precio dos -->
+                        <div class="mb-3">
+                            <label for="" class="form-label">price</label>
+                            <input type="text" value="<%= product.price%>"  class="form-control" name="price">
+                        </div>
+
+                        <!-- precio tres -->
+                        <div class="mb-3">
+                            <label  class="form-label">Stock</label>
+                            <input type="text" value="<%= product.stock%>"  class="form-control" name="stock">
+                        </div>
+
+                        <div class="mb-3">
+                            <label  class="form-label">date</label>
+                            <input type="date" value="<%= product.date%>"  class="form-control" name="date">
+                        </div>
+
+                        <!-- Botones -->
+                        <button type="submit" class="btn btn-success">Guardar</button>
+                        <a href="/home" type="submit" class="btn btn-danger">Cancelar</a>
+            </form>
+        </div>
+    </div>
+    </div>
+<% } %>

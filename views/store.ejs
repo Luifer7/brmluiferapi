@@ -1,0 +1,46 @@
+
+
+<br>
+<h4 style="margin-left: 20px;">Productos</h4>
+<br>
+
+<div class="container">
+
+
+        <div class="row">
+
+            <% results.forEach(product => { %>
+                <div class="col col-md-5 m-4">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><%= product.name%></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="">Price:</label>
+                                <span>$<%= product.price%></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Stock: </label>
+                                <span><%= product.stock%></span>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <div class="m-3">
+                                <a href="" class="btn btn-info">Comprar</a>
+                            </div>  
+                        </div>
+                    </div>
+
+                </div>
+    
+              <% }) %>
+
+           
+          
+        </div>
+
+
+</div>
